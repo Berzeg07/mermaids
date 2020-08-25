@@ -31,5 +31,11 @@ window.onload = function () {
 		}
 	});
 
+	let checkbox = document.querySelector('.form__checkbox');
+
+	checkbox.onclick = function () {
+		document.querySelector('.form__label span').classList.toggle('form__checkbox_show');
+	}
+
 
 } //!END ONLOAD

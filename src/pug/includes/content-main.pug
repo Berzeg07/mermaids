@@ -1,3 +1,20 @@
+//-  FEEDBACK
+section.feedback
+	h2.feedback__title Отправьте заявку и получите спецпредложение!
+
+	form.feedback__form.form
+		h3.form__title Онлайн заявка
+
+		label(aria-label="Ваше имя") #[input.form__input(type="text" placeholder="Ваше имя")]
+
+		label(aria-label="Контактный телефон") #[input.form__input(type="text" placeholder="Контактный телефон")]
+
+		textarea.form__textarea(placeholder="Комментарий")
+
+		label.form__label(aria-label="Согласие на обработку данных") #[input.form__checkbox(type="checkbox")] #[span] #[p Согласие на обработку персональных данных]
+
+		button.btn-orange(type="submit") Отправить заявку
+
 //-  CERTIFICATION
 section.certification
 	h2.main-title Сертификаты на продукцию
