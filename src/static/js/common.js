@@ -31,23 +31,29 @@ window.onload = function () {
 		}
 	});
 
-	//CHECKBOX
-	let checkbox = document.querySelector('.form__checkbox');
 
-	checkbox.onclick = function () {
-		document.querySelector('.form__label span').classList.toggle('form__checkbox_show');
-	}
+
+	//CHECKBOX
+	let checkbox = document.querySelectorAll('.form__checkbox');
+
+	checkbox.forEach((item) => {
+		item.onclick = function () {
+			document.querySelector('.form__label span').classList.toggle('form__checkbox_show');
+		}
+	});
 
 	//MENU
-	let btn = document.querySelector('.mobile-block button');
+	let btn = document.querySelectorAll('.mobile-block button');
 
-	btn.onclick = function (e) {
-		e.preventDefault();
 
-		this.classList.toggle('active');
-		$('.header-block').slideToggle();
-	}
+	btn.forEach((item) => {
+		item.onclick = function (e) {
+			e.preventDefault();
 
+			this.classList.toggle('active');
+			$('.header-block').slideToggle();
+		}
+	});
 
 
 } //!END ONLOAD
