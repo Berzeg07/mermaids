@@ -31,11 +31,23 @@ window.onload = function () {
 		}
 	});
 
+	//CHECKBOX
 	let checkbox = document.querySelector('.form__checkbox');
 
 	checkbox.onclick = function () {
 		document.querySelector('.form__label span').classList.toggle('form__checkbox_show');
 	}
+
+	//MENU
+	let btn = document.querySelector('.mobile-block button');
+
+	btn.onclick = function (e) {
+		e.preventDefault();
+
+		this.classList.toggle('active');
+		$('.header-block').slideToggle();
+	}
+
 
 
 } //!END ONLOAD
