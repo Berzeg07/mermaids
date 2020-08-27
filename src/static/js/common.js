@@ -72,6 +72,48 @@ window.onload = function () {
 		}
 	});
 
+	let oilSwiper = new Swiper('.oil-slider', {
+		init: false,
+		loop: true,
+		spaceBetween: 20,
+		slidesPerView: 3,
+		observer: true,
+		observeParents: true,
+
+		navigation: {
+			prevEl: '.oil-block .swiper-button-prev',
+			nextEl: '.oil-block .swiper-button-next'
+		},
+
+		pagination: {
+			el: '.oil-block .swiper-pagination',
+			type: 'bullets',
+			clickable: true
+		},
+
+		breakpoints: {
+			600: {
+				slidesPerView: 1
+			},
+			992: {
+				slidesPerView: 2
+			},
+			1200: {
+				slidesPerView: 3
+			}
+		}
+	});
+
+	if (window.innerWidth >= 1280) {
+		oilSwiper.init();
+	}
+
+	window.addEventListener('resize', function () {
+		if (this.innerWidth <= 1280) {
+			oilSwiper.destroy();
+		}
+	});
+
 	//SHOW TEXT
 	let btnText = document.querySelector('.why-description .show');
 
