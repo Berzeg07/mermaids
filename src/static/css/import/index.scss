@@ -855,7 +855,9 @@ body {
 		margin-bottom: 36px;
 	}
 
-	margin-left: 100px;
+	@media (min-width: 1280px) {
+		margin-left: 100px;
+	}
 }
 
 .oil-slider .swiper-wrapper {
@@ -940,8 +942,16 @@ body {
 	display: flex;
 	justify-content: center;
 
+	@media (min-width: 768px) {
+		height: 298px;
+	}
+
 	@media (min-width: 1100px) {
 		margin-bottom: 21px;
+	}
+
+	@media (min-width: 1400px) {
+		height: auto;
 	}
 }
 
@@ -2642,7 +2652,11 @@ body {
 	padding-top: 23px;
 	padding-right: 16px;
 	padding-left: 23px;
-	padding-bottom: 86px;
+	padding-bottom: 15px;
+
+	@media (min-width: 1100px) {
+		padding-bottom: 86px;
+	}
 }
 
 .delivery .main-title {
