@@ -31,7 +31,46 @@ window.onload = function () {
 		}
 	});
 
+	let advantagesSwiper = new Swiper('.advantages-slider', {
+		loop: true,
+		spaceBetween: 20,
+		slidesPerView: 4,
+		observer: true,
+		observeParents: true,
 
+		navigation: {
+			prevEl: '.advantages-swiper-block .swiper-button-prev',
+			nextEl: '.advantages-swiper-block .swiper-button-next'
+		},
+
+		pagination: {
+			el: '.advantages-swiper-block .swiper-pagination',
+			type: 'bullets',
+			clickable: true
+		},
+
+		breakpoints: {
+			600: {
+				slidesPerView: 1
+			},
+			992: {
+				slidesPerView: 2
+			},
+			1200: {
+				slidesPerView: 3
+			}
+		}
+	});
+
+	if (window.innerWidth >= 1280) {
+		advantagesSwiper.destroy();
+	}
+
+	window.addEventListener('resize', function () {
+		if (this.innerWidth >= 1280) {
+			advantagesSwiper.destroy();
+		}
+	});
 
 	//CHECKBOX
 	let checkbox = document.querySelectorAll('.form__checkbox');
