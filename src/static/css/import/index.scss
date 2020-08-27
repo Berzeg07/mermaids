@@ -735,6 +735,258 @@ body {
 	}
 }
 
+//!========================WHY============================//
+.why {
+	padding-left: 19px;
+	margin-bottom: 35px;
+
+	@media (min-width: 1100px) {
+		margin-bottom: 66px;
+	}
+
+	@media (min-width: 1600px) {
+		padding-left: 0;
+	}
+}
+
+.why h2 {
+	margin-bottom: 20px;
+}
+
+.why-fish-block {
+	max-width: 1248px;
+	width: 100%;
+	overflow: auto;
+	margin: 0 auto;
+	margin-bottom: 30px;
+
+	@media (min-width: 1280px) {
+		overflow: hidden;
+	}
+
+	@media (min-width: 1600px) {
+		max-width: 1390px;
+	}
+}
+
+.why-fish-inner {
+	width: 970px;
+	margin-left: 100px;
+	margin-top: 30px;
+	margin-bottom: 21px;
+
+	position: relative;
+
+	@media (min-width: 1100px) {
+		margin-bottom: 64px;
+	}
+
+	@media (min-width: 1600px) {
+		width: 1104px;
+	}
+
+	&::before {
+		content: "";
+
+		position: absolute;
+		bottom: -19px;
+		left: -97px;
+		z-index: -1;
+
+		background-position: 0 0;
+		background-repeat: no-repeat;
+		background-image: url("../img/fish.png");
+
+		width: 222px;
+		height: 125px;
+	}
+
+	&::after {
+		content: "";
+
+		position: absolute;
+		bottom: 0px;
+		right: -180px;
+		z-index: -1;
+
+		background-position: 0 0;
+		background-repeat: no-repeat;
+		background-image: url("../img/fishback.png");
+		background-size: cover;
+
+		width: 285px;
+		height: 84px;
+	}
+}
+
+.why-fish-inner div {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 37px;
+	padding-right: 19px;
+
+	display: flex;
+	align-items: center;
+	background-color: #ffef5a;
+}
+
+.why-fish-inner p {
+	color: #ff2c4f;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 28px;
+
+	width: 720px;
+	margin-right: 52px;
+
+	@media (min-width: 1600px) {
+		width: 868px;
+	}
+}
+
+.why-fish-inner span {
+	color: rgba(169, 186, 223, 0.84);
+	font-weight: bold;
+	font-size: 28px;
+	line-height: 33px;
+}
+
+.why-list {
+	max-width: 270px;
+	margin: 0 auto;
+	margin-bottom: 35px;
+
+	@media (min-width: 600px) {
+		max-width: none;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	@media (min-width: 768px) {
+		justify-content: space-around;
+	}
+
+	@media (min-width: 1100px) {
+		display: block;
+		column-count: 3;
+		padding-right: 16px;
+	}
+
+	@media (min-width: 1600px) {
+		padding-left: 100px;
+		padding-right: 100px;
+	}
+}
+
+.why-list li {
+	margin-bottom: 25px;
+	padding-left: 22px;
+	position: relative;
+
+	@media (min-width: 600px) {
+		width: 45%;
+	}
+
+	@media (min-width: 768px) {
+		width: 36%;
+	}
+
+	@media (min-width: 1100px) {
+		width: auto;
+		margin-bottom: 40px;
+	}
+
+	@media (min-width: 1100px) {
+		min-height: 48px;
+	}
+
+	&::before {
+		content: "";
+
+		position: absolute;
+		top: 7px;
+		left: 0;
+
+		background-color: #ff2c4f;
+		border-radius: 50%;
+
+		width: 10px;
+		height: 10px;
+	}
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.why-list .hide {
+	display: none;
+
+	@media (min-width: 1100px) {
+		display: block;
+	}
+}
+
+.why-list p {
+	max-width: 249px;
+
+	color: #727272;
+	font-size: 18px;
+	line-height: 21px;
+
+	@media (min-width: 1100px) {
+		font-size: 20px;
+		line-height: 24px;
+		max-width: none;
+	}
+}
+
+.why-description {
+	color: #717171;
+	font-size: 16px;
+	line-height: 22px;
+	font-family: "helveticaneuecyr";
+	font-weight: normal;
+
+	padding-right: 16px;
+
+	max-width: 1664px;
+
+	@media (min-width: 1100px) {
+		font-size: 18px;
+		line-height: 28px;
+	}
+
+	@media (min-width: 1600px) {
+		padding-left: 100px;
+	}
+}
+
+.why-description .show {
+	@media (min-width: 1100px) {
+		display: none;
+	}
+}
+
+.why-description a {
+	color: #3d65ba;
+	border-bottom: 1px solid #3d65ba;
+	cursor: pointer;
+}
+
+.why-description .hide {
+	display: none;
+
+	@media (min-width: 1100px) {
+		display: inline;
+	}
+}
+
+.why-description .show-text {
+	display: inline;
+}
+
 //!========================ADVANTAGES============================//
 .advantages {
 	color: #ffffff;

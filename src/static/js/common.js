@@ -72,6 +72,14 @@ window.onload = function () {
 		}
 	});
 
+	//SHOW TEXT
+	let btnText = document.querySelector('.why-description .show');
+
+	btnText.onclick = function () {
+		this.style.display = 'none';
+		document.querySelector('.why-description .hide').classList.add('show-text');
+	}
+
 	//CHECKBOX
 	let checkbox = document.querySelectorAll('.form__checkbox');
 
