@@ -20,20 +20,20 @@
                 td
                     .hidden-title Цена
                     .basket-price.one-product-price
-                        span.item-price 3500 
+                        span.item-price 1000 
                         |руб.
 
                 td
                     .hidden-title Количество
                     .switcher
                         button(type="button").switcher__btn.switcher__btn_left -
-                        input(type="text" value="1" disabled="disabled" id="quantity").switcher__inp
+                        input(type="text" value="1" disabled="disabled").switcher__inp
                         button(type="button").switcher__btn.switcher__btn_right +
                 td
                     .hidden-title Сумма: 
                     .basket-table__item
                         .basket-price.all-product-price
-                            span.item-price 3500 
+                            span.item-price 1000 
                             |руб.
 
                         button(type="button").delete-product.delete-product_desc
@@ -55,7 +55,7 @@
                     .hidden-title Количество
                     .switcher
                         button(type="button").switcher__btn.switcher__btn_left -
-                        input(type="text" value="1" disabled="disabled" id="quantity").switcher__inp
+                        input(type="text" value="1" disabled="disabled").switcher__inp
                         button(type="button").switcher__btn.switcher__btn_right +
                 td
                     .hidden-title Сумма:
@@ -77,20 +77,20 @@
                 td
                     .hidden-title Цена
                     .basket-price.one-product-price
-                        span.item-price 3500 
+                        span.item-price 4000 
                         |руб.
 
                 td
                     .hidden-title Количество
                     .switcher
                         button(type="button").switcher__btn.switcher__btn_left -
-                        input(type="text" value="1" disabled="disabled" id="quantity").switcher__inp
+                        input(type="text" value="1" disabled="disabled").switcher__inp
                         button(type="button").switcher__btn.switcher__btn_right +
                 td
                     .hidden-title Сумма
                     .basket-table__item
                         .basket-price.all-product-price
-                            span.item-price 3500 
+                            span.item-price 4000 
                             |руб.
 
                         button(type="button").delete-product.delete-product_desc
@@ -102,7 +102,23 @@
         .basket-info__item
             .total
                 |Итого к оплате: 
-                span.total__price 16750 
+                span.total__price 8500 
                 |руб.
+
+
+    form.form-contact(action="#" method="POST")
+        h2.basket__title Контактная информация
+
+        .form-contact__top
+            input(type="text" placeholder="Имя").inp.inp_name
+            input(type="text" placeholder="Телефон").inp.inp_phone
+            input(type="text" placeholder="Адрес доставки").inp.inp_adress
+            input(type="text" placeholder="Комментарий").inp.inp_comment
+
+        button(type="submit").form-contact__btn Отправить заявку
+
+        .form-privacy
+            input(type="checkbox" checked).inp-check#inpchek
+            label(for="inpchek").inpcheck С условиями конфендициальности ознакомлен
 
 
